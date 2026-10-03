@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project Documentation — Technical Projects in Software, AI & Engineering</title>
+  <meta name="description"
+    content="A technical archive documenting projects in web development, software, AI and computer vision, electronics, embedded systems, robotics and assistive technology.">
+  <meta property="og:title" content="Project Documentation — Technical Projects in Software, AI & Engineering">
+  <meta property="og:description"
+    content="Seven documented technical projects, from information platforms to embedded systems and computer vision.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <header id="top">
+    <div class="wrap bar">
+      <a class="brand" href="#cover">Project Documentation</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"
+        aria-controls="nav"><span></span><span></span></button>
+      <nav id="nav" aria-label="Main"><a href="#index">Index</a><a href="#p1">Projects</a><a
+          href="#technologies">Technologies</a><a href="#record">Development</a></nav>
+    </div>
+  </header>
+  <main id="main">
+    <section id="cover" class="cover">
+      <div class="wrap">
+        <p class="meta">Project archive / Technical documentation / 2026</p>
+        <h1>Project<br>Documentation</h1>
+        <p class="sub">A technical collection of software, AI, electronics, and assistive technology projects.</p>
+        <p class="intro">This archive documents practical projects developed across software engineering, artificial
+          intelligence, computer vision, electronics, embedded systems, and assistive technology. Each chapter records
+          what the project is, why it was built, how it works, what it uses, and what was learned.</p>
+      </div>
+    </section>
+
+    <section id="index" class="band">
+      <div class="wrap">
+        <h2 class="sec">Index</h2>
+        <ol class="toc">
+          <li><a href="#p1"><b>01</b><span><strong>Applied Technology Schools</strong><em>Web platform / Information
+                  architecture</em></span></a></li>
+          <li><a href="#p2"><b>02</b><span><strong>Medical Laboratory Results Analysis</strong><em>Software / Data
+                  interpretation</em></span></a></li>
+          <li><a href="#p3"><b>03</b><span><strong>Smart Cane</strong><em>Arduino / Assistive technology</em></span></a>
+          </li>
+          <li><a href="#p4"><b>04</b><span><strong>Laser Alarm System</strong><em>Electronics / Security
+                  system</em></span></a></li>
+          <li><a href="#p5"><b>05</b><span><strong>Presentation Robot</strong><em>Robotics / Embedded systems · In
+                  development</em></span></a></li>
+          <li><a href="#p6"><b>06</b><span><strong>YOLOv8 Vandalism Detection</strong><em>Artificial intelligence /
+                  Computer vision</em></span></a></li>
+          <li><a href="#p7"><b>07</b><span><strong>Ultrasonic Distance Measurement System</strong><em>Physics / Arduino
+                  / Sensor measurement · Completed</em></span></a></li>
+        </ol>
+      </div>
+    </section>
+
+    <article id="p1" class="chapter" data-title="01 Applied Technology Schools">
+      <div class="wrap grid">
+        <header class="ch-head"><span class="num">01</span>
+          <p class="meta">Web development / Information platform</p>
+          <h2>Applied Technology Schools</h2>
+          <p class="status">Developed over approximately six months</p>
+        </header>
+        <div class="ch-body">
+          <h3>Overview</h3>
+          <p>A web platform that provides organized information about Applied Technology Schools and the educational
+            opportunities they offer.</p>
+          <h3>Problem / Motivation</h3>
+          <p>Information about schools and educational opportunities is extensive and changes over time. The platform
+            aims to present it clearly and in one place.</p>
+          <h3>How it works</h3>
+          <p>Content is organized into a structured hierarchy so users can move through it with clear navigation and
+            find school information without searching across scattered sources.</p>
+          <figure class="dg" role="img" aria-label="Information architecture: platform, categories, school information">
+            <span>Platform</span><i>→</i><span>Organized sections</span><i>→</i><span>School information</span></figure>
+          <h3>Technologies / Components</h3>
+          <p>Front-end web development. No other technologies are specified for this project.</p>
+          <h3>Development notes</h3>
+          <p>The main challenges were presenting a large amount of information clearly and keeping content maintainable
+            as it changes.</p>
+          <h3>What was learned</h3>
+          <p>Practical web development, information architecture, structuring and maintaining content, and designing for
+            usability.</p>
+          <p><a class="btn" href="https://tech-schools-eg.netlify.app/universities" target="_blank" rel="noopener">Live
+              project ↗</a></p>
+        </div>
+      </div>
+    </article>
+
+    <article id="p2" class="chapter" data-title="02 Medical Laboratory Results Analysis">
+      <div class="wrap grid">
+        <header class="ch-head"><span class="num">02</span>
+          <p class="meta">Software / Data interpretation</p>
+          <h2>Medical Laboratory Results Analysis Application</h2>
+        </header>
+        <div class="ch-body">
+          <h3>Overview</h3>
+          <p>A software application that lets users enter laboratory test results and understand them in simple
+            language. It is rule-based and does not use artificial intelligence.</p>
+          <h3>Problem / Motivation</h3>
+          <p>Laboratory results are technical and difficult for most people to read.</p>
+          <h3>How it works</h3>
+          <p>Each entered value is compared with its normal/reference range and classified as within range, higher, or
+            lower. The result is then shown in plain language with informational guidance.</p>
+          <figure class="dg" role="img" aria-label="Input, comparison, classification, explanation">
+            <span>Input</span><i>→</i><span>Reference range comparison</span><i>→</i><span>Within / Higher /
+              Lower</span><i>→</i><span>Plain explanation</span></figure>
+          <h3>Technologies / Components</h3>
+          <p>Rule-based data processing and conditional logic.</p>
+          <h3>What was learned</h3>
+          <p>Input handling, logical classification, and presenting technical information in a user-friendly way.</p>
+          <p class="warn">Informational software tool only. It does not replace professional medical advice, diagnosis
+            or consultation.</p>
+        </div>
+      </div>
+    </article>
+
+    <article id="p3" class="chapter" data-title="03 Smart Cane">
+      <div class="wrap grid">
+        <header class="ch-head"><span class="num">03</span>
+          <p class="meta">Arduino / Assistive technology / Embedded systems</p>
+          <h2>Smart Cane</h2>
+        </header>
+        <div class="ch-body">
+          <h3>Overview</h3>
+          <p>An Arduino-based assistive project that helps detect obstacles and gives the user feedback.</p>
+          <h3>Problem / Motivation</h3>
+          <p>A traditional cane senses only what it touches. This project extends it with sensors for the surrounding
+            environment.</p>
+          <h3>How it works</h3>
+          <p><strong>Obstacle detection.</strong> Multiple ultrasonic sensors monitor different sides of the cane.</p>
+          <p><strong>Feedback.</strong> Detected conditions can trigger vibration and/or buzzer alerts.</p>
+          <p><strong>Environmental detection.</strong> A water sensor and hole detection extend the system beyond front
+            obstacles.</p>
+          <p><strong>Visibility.</strong> Reflective tape makes the cane more visible outdoors, near roads and in low
+            light.</p>
+          <figure class="cane" role="img"
+            aria-label="Diagram: ultrasonic sensors feed the Arduino, which drives vibration and buzzer; water and hole sensors also connect">
+            <div class="top">Ultrasonic sensors (several sides)</div>
+            <div class="mid"><span>Sensor</span>
+              <div class="core">SMART CANE<br><small>Arduino</small><br><small>Vibration + Buzzer</small></div>
+              <span>Sensor</span>
+            </div>
+            <div class="bot"><span>Water sensor</span><span>Hole sensor</span></div>
+          </figure>
+          <h3>Technologies / Components</h3>
+          <p>Arduino, ultrasonic sensors, vibration feedback, buzzers, water sensor, hole detection sensor, reflective
+            tape, and additional sensors/components.</p>
+          <h3>What was learned</h3>
+          <p>Sensor integration, combining several inputs in one embedded system, and hardware prototyping.</p>
+        </div>
+      </div>
+    </article>
+
+    <article id="p4" class="chapter" data-title="04 Laser Alarm System">
+      <div class="wrap grid">
+        <header class="ch-head"><span class="num">04</span>
+          <p class="meta">Electronics / Security system</p>
+          <h2>Laser Alarm System</h2>
+        </header>
+        <div class="ch-body">
+          <h3>Overview</h3>
+          <p>A simple electronic alarm that reacts when a laser beam is interrupted.</p>
+          <h3>How it works</h3>
+          <p>A laser beam is aimed at an LDR. When the beam is interrupted, the LDR detects the change in light level,
+            which triggers the alarm circuit and activates the buzzer. LEDs give visual status indication.</p>
+          <figure class="dg v" role="img" aria-label="Laser to LDR to alarm circuit to buzzer and LED">
+            <span>LASER</span><i>↓</i><span>LDR</span><i>↓ beam interrupted</i><span>ALARM
+              CIRCUIT</span><i>↓</i><span>BUZZER + LED INDICATOR</span></figure>
+          <h3>Components</h3>
+          <p>Laser, LDR, buzzer, LEDs.</p>
+          <h3>What was learned</h3>
+          <p>How light-dependent sensing works and how a basic circuit turns a change in light into an alert.</p>
+        </div>
+      </div>
+    </article>
+
+    <article id="p5" class="chapter" data-title="05 Presentation Robot">
+      <div class="wrap grid">
+        <header class="ch-head"><span class="num">05</span>
+          <p class="meta">Robotics / Arduino / Embedded systems</p>
+          <h2>Presentation Robot</h2>
+          <p class="status live">In development</p>
+        </header>
+        <div class="ch-body">
+          <h3>Overview</h3>
+          <p>A physical robot being developed to take part in presentations by moving into position and speaking in
+            place of students. The project is still under development and its features are not presented as complete.
+          </p>
+          <h3>Concept</h3>
+          <p>The idea is a robot that can present on its own, combining movement, audio output, and mechanical motion.
+          </p>
+          <figure class="dg" role="img" aria-label="Arduino controls motors, servo motors and speakers">
+            <span>Arduino</span><i>→</i><span>Motors (movement)<br>Servo motors (mechanical motion)<br>Speakers
+              (audio)</span></figure>
+          <h3>Technologies / Components</h3>
+          <p>Arduino, speakers, servo motors, motors for movement, and several additional hardware components.</p>
+          <h3>Development notes</h3>
+          <p>Current work is on hardware integration across movement, servo control and audio. Development is iterative:
+            build, test, and refine.</p>
+        </div>
+      </div>
+    </article>
+
+    <article id="p6" class="chapter" data-title="06 YOLOv8 Vandalism Detection">
+      <div class="wrap grid">
+        <header class="ch-head"><span class="num">06</span>
+          <p class="meta">Artificial intelligence / Computer vision / Object detection</p>
+          <h2>YOLOv8 Vandalism Detection</h2>
+        </header>
+        <div class="ch-body">
+          <h3>Overview</h3>
+          <p>An object detection model, YOLOv8m, trained to detect vandalism in images and video. The dataset is
+            vandalism123-3, with one class.</p>
+          <h3>How it works</h3>
+          <p>YOLO models look at an image once and predict bounding boxes with confidence scores. The model was trained
+            on the dataset and then evaluated on standard detection metrics.</p>
+          <figure class="dg v" role="img"
+            aria-label="Image or video to YOLOv8m to detection to bounding box and confidence"><span>IMAGE /
+              VIDEO</span><i>↓</i><span>YOLOv8m</span><i>↓</i><span>OBJECT DETECTION:
+              VANDALISM</span><i>↓</i><span>BOUNDING BOX + CONFIDENCE</span></figure>
+          <h3>Reported evaluation metrics</h3>
+          <div class="metrics">
+            <div><b>≈ 0.984</b><span>mAP@50</span></div>
+            <div><b>≈ 0.851</b><span>mAP@50–95</span></div>
+          </div>
+          <p class="small">Reported project results. The model is not claimed to be deployed in production.</p>
+          <details>
+            <summary>Technical details: environment</summary>
+            <table>
+              <tbody>
+                <tr>
+                  <th>Python</th>
+                  <td>3.12.10</td>
+                </tr>
+                <tr>
+                  <th>OpenCV</th>
+                  <td>4.12</td>
+                </tr>
+                <tr>
+                  <th>NumPy</th>
+                  <td>2.2.6</td>
+                </tr>
+                <tr>
+                  <th>Ultralytics</th>
+                  <td>8.3.232</td>
+                </tr>
+                <tr>
+                  <th>PyTorch</th>
+                  <td>2.9.1+cpu</td>
+                </tr>
+                <tr>
+                  <th>SciPy</th>
+                  <td>1.16.3</td>
+                </tr>
+              </tbody>
+            </table>
+          </details>
+          <h3>What was learned</h3>
+          <p>Preparing and using a dataset, training an object detection model, and interpreting mAP metrics.</p>
+        </div>
+      </div>
+    </article>
+
+    <article id="p7" class="chapter" data-title="07 Ultrasonic Distance Measurement">
+      <div class="wrap grid">
+        <header class="ch-head"><span class="num">07</span>
+          <p class="meta">Physics / Arduino / Sensor measurement</p>
+          <h2>Ultrasonic Distance Measurement System</h2>
+          <p class="status">Completed</p>
+        </header>
+        <div class="ch-body">
+          <h3>01 — Overview</h3>
+          <p>A completed Arduino-based physics and measurement project that measures the distance between an ultrasonic
+            sensor and an object and shows the result on a small LCD screen. It is a simple, practical application of
+            ultrasonic sensing, distance measurement, and digital display.</p>
+          <h3>02 — How it works</h3>
+          <p>The ultrasonic sensor measures the distance to an object. The Arduino Nano processes the measurement,
+            converts it into the display units, and sends it to the LCD.</p>
+          <figure class="dg v" role="img"
+            aria-label="Object, ultrasonic sensor, distance measurement, Arduino Nano, distance conversion, LCD, cm and m">
+            <span>OBJECT</span><i>↓</i><span>ULTRASONIC SENSOR</span><i>↓</i><span>DISTANCE
+              MEASUREMENT</span><i>↓</i><span>ARDUINO NANO</span><i>↓</i><span>DISTANCE
+              CONVERSION</span><i>↓</i><span>LCD DISPLAY</span><i>↓</i><span>cm / m</span></figure>
+          <h3>03 — Hardware</h3>
+          <figure class="meas" role="img"
+            aria-label="Generic diagram: object, ultrasonic sensor, Arduino Nano, LCD showing distance in cm and m">
+            <div class="obj">OBJECT</div>
+            <div class="gauge"><i></i><span>distance</span><i></i></div>
+            <div class="box">ULTRASONIC SENSOR<small>generic</small></div>
+            <div class="stem"></div>
+            <div class="box">ARDUINO NANO</div>
+            <div class="stem"></div>
+            <div class="lcd"><b>42.7 cm</b><b>0.427 m</b></div>
+            <figcaption>Generic representation. The values on the LCD are an illustrative example only, not a measured
+              result.</figcaption>
+          </figure>
+          <p>Confirmed components: Arduino Nano, a common ultrasonic distance sensor, and a small LCD display.</p>
+          <h3>04 — Measurement</h3>
+          <p>The measured distance is displayed in two units: centimeters (<strong>cm</strong>) and meters
+            (<strong>m</strong>).</p>
+          <h3>05 — Technical concept</h3>
+          <p>The sensor sends an ultrasonic pulse toward an object and measures the time the reflected sound wave takes
+            to return. Because sound travels at a known speed, that time gives the distance. The pulse travels to the
+            object and back, so the distance is half of the full path.</p>
+          <h3>06 — What was learned</h3>
+          <ul class="learn">
+            <li>Working with sensors</li>
+            <li>Reading physical measurements</li>
+            <li>Microcontroller-based measurement</li>
+            <li>Converting measurement units</li>
+            <li>Displaying sensor data</li>
+            <li>Connecting physical phenomena with software and electronics</li>
+          </ul>
+          <h3>07 — Status</h3>
+          <p class="status live">Completed</p>
+        </div>
+      </div>
+    </article>
+
+    <section id="technologies" class="band">
+      <div class="wrap">
+        <h2 class="sec">Technologies</h2>
+        <div class="scroll">
+          <table class="tt">
+            <thead>
+              <tr>
+                <th>Project</th>
+                <th>Technologies / components</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>01 Applied Technology Schools</th>
+                <td>Front-end web development</td>
+              </tr>
+              <tr>
+                <th>02 Lab Results Analysis</th>
+                <td>Rule-based data processing</td>
+              </tr>
+              <tr>
+                <th>03 Smart Cane</th>
+                <td>Arduino, ultrasonic sensors, vibration, buzzers, water and hole sensors</td>
+              </tr>
+              <tr>
+                <th>04 Laser Alarm</th>
+                <td>Laser, LDR, buzzer, LEDs</td>
+              </tr>
+              <tr>
+                <th>05 Presentation Robot</th>
+                <td>Arduino, speakers, servo motors, motors</td>
+              </tr>
+              <tr>
+                <th>06 YOLOv8 Detection</th>
+                <td>Python, YOLOv8m, Ultralytics, PyTorch, OpenCV, NumPy, SciPy</td>
+              </tr>
+              <tr>
+                <th>07 Ultrasonic Distance</th>
+                <td>Arduino Nano, ultrasonic distance sensor, small LCD</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="record" class="record">
+      <div class="wrap">
+        <h2 class="sec">Development record</h2>
+        <p class="intro">These projects represent practical work across web development, software engineering,
+          artificial intelligence, computer vision, embedded systems, electronics, robotics, and assistive technology.
+        </p>
+        <p class="intro">Taken together they show a progression from software and information systems toward hardware,
+          embedded systems, and AI and computer vision, with each project applying what was learned in the one before.
+        </p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap foot"><span>Project Documentation · 2026</span><span>Technical project archive</span></div>
+  </footer>
+  <button class="totop" id="totop" aria-label="Back to top" hidden>↑</button>
+  <script src="script.js"></script>
+</body>
+
+</html>
